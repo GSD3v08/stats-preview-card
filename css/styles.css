@@ -1,0 +1,136 @@
+:root{
+    --dark-blue: hsl(233, 47%, 7%);
+    --desaturated-blue: hsl(244, 38%, 16%);
+    --soft-violet: hsl(277, 64%, 61%);
+    --soft-gray: hsla(0, 1%, 64%, 0.925);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+/* Mobile first */
+body{
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    
+    background-color: var(--dark-blue);
+    color: white;
+}
+
+.card{
+    width: 90%;
+    max-width: 654px;
+    margin: 4em auto;
+    overflow: hidden;
+    text-align: center;
+
+    background-color: var(--desaturated-blue);
+    border-radius: .6em;
+}
+
+.image-header{
+    position: relative;
+    margin-bottom: 2.5em;
+    line-height: 0;
+}
+
+.background-overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    background-color: hsla(277, 62%, 31%, 0.61);
+}
+
+img{
+    max-width: 100%;
+}
+
+.info-container{
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 1.5em;
+}
+
+.title span{
+    color: var(--soft-violet);
+}
+
+.stat-container{
+    margin-bottom: 1.5em;
+}
+
+.stat-container span{
+    font-family: 'Lexend Deca', sans-serif;  
+    font-weight: 400;  
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+
+    color: var(--soft-gray);
+}
+.stat-qty{
+    margin-bottom: .3em;
+}
+
+.description{
+    margin-bottom: 50px;
+    line-height: 1.6em;
+    
+    font-weight: 400;
+    letter-spacing: .4px;
+
+    color: hsla(0, 0%, 100%, 0.623);
+}
+
+/* Desktop */
+@media (min-width: 1440px) {
+
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: row-reverse;
+        max-width: 1060px;
+        text-align: left;
+    }
+
+    .image-header{
+        min-width: 505px;
+        margin-bottom: 0;
+    }
+    .title{
+        font-size: 2.25rem;
+    }
+    .description{
+        font-size: .95em;
+    }
+ 
+    .stats-container{
+        display: flex;
+    }
+    .stat-container{
+        margin-right: 4em;
+    }
+    .stats-container :nth-child(3){
+        margin-right: 0;
+    }
+
+    .info-container{
+        padding-top: 2.5em;
+        padding-right: 7em;
+        padding-left: 4.5em;
+    }
+
+   
+}

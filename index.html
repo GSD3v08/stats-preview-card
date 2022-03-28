@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet">
+    <title>Stats Preview Card</title>
+</head>
+<body>
+    <main class="card">
+        <div class="image-header">
+            <!-- <div class="background-overlay"></div> -->
+            <!-- <img  srcset="/assets/images/image-header-desktop.jpg, 
+                         /assets/images/image-header-mobile.jpg 2x" alt="image header mobile"> -->
+            <div class="background-overlay"></div>
+            <picture>
+                <source srcset="/assets/images/image-header-mobile.jpg" media="(max-width:1439px)">
+                <!-- <source srcset="/assets/images/image-header-desktop.jpg" media="(min-width:1440px)"> -->
+                <img src="/assets/images/image-header-desktop.jpg" alt="image main">
+            </picture>
+
+        </div>
+        
+        <div class="info-container">
+            <h1 class="title">Get <span>insights</span> that help your business grow.</h1>
+            <p class="description">Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+                experience, and overall efficiency.
+            </p>
+
+            <div class="stats-container">
+                <div class="stat-container">
+                    <h2 class="stat-qty">10k+</h2>
+                    <span>companies</span>
+                </div>
+                <div class="stat-container">
+                    <h2 class="stat-qty">314</h2>
+                    <span>templates</span>
+                </div>
+                <div class="stat-container">
+                    <h2 class="stat-qty">12M+</h2>
+                    <span>queries</span>
+                </div>
+                
+            </div>
+
+        </div>
+        
+
+    </main>
+    
+</body>
+</html>
